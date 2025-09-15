@@ -1,0 +1,36 @@
+{
+  "name": "nexttemplate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "generatemediaimports": "node scripts/generateimageimports.js && node scripts/generatesvgimports.js",
+    "dev": "npm run generatemediaimports && next dev",
+    "build": "npm run generatemediaimports && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "next": "15.4.1",
+    "@tailwindcss/postcss": "^4.1.11",
+    "tailwindcss": "^4.1.11",
+    "react-multi-carousel": "^2.8.6",
+    "postcss": "^8.5.6",
+    "clsx": "^2.1.1",
+    "resend": "^4.7.0",
+    "zod": "^4.0.11",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.541.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.1",
+    "@eslint/eslintrc": "^3",
+    "@svgr/webpack": "^8.1.0"
+  }
+}

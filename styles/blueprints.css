@@ -1,0 +1,28 @@
+.generic-tab{ /* Use for tab buttons and dropdowns, fill out classes as required.*/
+
+  &.open{
+
+  }
+
+  &:hover{
+
+  }
+
+  &.selected{
+
+  }
+}
+
+
+.mobile-nav-blueprint{
+  .nav-button{
+    &.toggle-on{
+
+    }
+  }
+
+  .nav-menu{
+    &.toggle-on{
+    }
+  }
+}

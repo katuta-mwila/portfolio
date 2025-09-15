@@ -1,0 +1,22 @@
+{
+  "contact": {
+    "firstname": {
+      "minLength": 2,
+      "maxLength": 32,
+      "label": "First Name"
+    },
+    "lastname": {
+      "minLength": 2,
+      "maxLength": 32,
+      "label": "Last Name"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "message": {
+      "minLength": 5,
+      "maxLength": 500,
+      "label": "Message"
+    }
+  }
+}

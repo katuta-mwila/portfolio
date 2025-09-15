@@ -1,0 +1,214 @@
+@layer components{
+
+  .generic-tab{
+    .underline-button{
+      @apply lg:text-lg text-base cursor-pointer flex-vert items-center px-2;
+
+      .select-line-1, .select-line-2{
+        width: 0;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: var(--color-accent-1);
+        transition: width 0.5s;
+      }
+    }
+
+    .desktop-template-menu{
+      @apply w-[180px] theme-primary py-2 hidden absolute top-[calc(100%)] left-[50%] translate-x-[calc(-50%)] min-w-35 rounded-md overflow-hidden shadow-md border border-gray-300;
+
+      .menu-button{
+        @apply px-3 py-1;
+
+        &:hover{
+          @apply bg-primary-shade-1;
+        }
+
+        &.selected{
+          @apply bg-primary-shade-2;
+        }
+      }
+    }
+
+    .mobile-template-menu{
+      @apply hidden rounded-md text-lg px-3.5 overflow-hidden;
+      .menu-button{
+        @apply px-3 py-1 border-l border-l-gray-300;
+
+        &:hover{
+          @apply text-accent-1;
+        }
+
+        &.selected{
+          @apply text-accent-1;
+        }
+      }
+    }
+
+    .desktop-template-button{
+      @apply flex-panel justify-between cursor-pointer text-lg px-2 py-3;
+    }
+
+    .mobile-template-button{
+      @apply flex-panel justify-between cursor-pointer text-lg;
+    }
+
+    &.open{
+      .underline-button{
+        @apply text-accent-1;
+
+        .select-line-2{
+          width: 100%;
+          border-bottom-color: var(--color-accent-1);
+        }
+      }
+
+      .desktop-template-menu{
+        @apply flex-vert;
+      }
+      
+      .mobile-template-menu{
+        @apply flex-vert;
+      }
+
+      .desktop-template-button{
+        @apply text-accent-1;
+      }
+
+      .mobile-template-button{
+        @apply text-accent-1;
+      }
+    }
+
+    &:hover{
+      .underline-button{
+        @apply text-accent-1;
+
+        .select-line-2{
+          width: 100%;
+          border-bottom-color: var(--color-accent-1);
+        }
+      }
+
+      .desktop-template-button{
+        @apply text-accent-1;
+      }
+
+      .mobile-template-button{
+        @apply text-accent-1;
+      }
+
+      .desktop-template-menu{
+        @apply flex-vert;
+      }
+    }
+
+    &.selected{
+      .underline-button{
+        @apply text-accent-1;
+
+        .select-line-2{
+          width: 100%;
+          border-bottom-color: var(--color-accent-1);
+        }
+      }
+
+      .desktop-template-button{
+        @apply text-accent-1;
+      }
+
+      .mobile-template-button{
+        @apply text-accent-1;
+      }
+    }
+  }
+
+  .mobile-nav{
+    @apply flex md:hidden;
+    .nav-button{
+      @apply cursor-pointer;
+    }
+
+    .nav-menu{
+      @apply fixed w-full theme-primary left-0 flex-vert gap-4 items-center py-20 overflow-y-auto;
+      top: var(--height-nav);
+      height: calc(100vh - var(--height-nav));
+
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    &.open{
+      .nav-button{
+
+      }
+
+      .nav-menu{
+        opacity: 1;
+        transform: scaleY(1);
+      }
+
+    }
+  }
+
+  .nav-tab-blueprint{ /* not mobile */
+    .tab-button{}
+
+    .tab-dropdown{}
+
+    &.open{
+      .tab-button{}
+      .tab-dropdown{}
+    }
+
+    &:hover{
+      .tab-button{}
+      .tab-dropdown{}
+    }
+
+    &.selected{
+      .tab-button{}
+      .tab-dropdown{}
+    }
+  }
+
+  .ez-cloak{
+    .ez-error-list{
+      @apply text-error-red;
+    }
+  }
+
+  #contact-form{
+    label{
+      @apply text-sm;
+    }
+  }
+
+  .scrollbar-1 {
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @apply rounded-full;
+        background-color: rgba(255,255,255,0.3);
+        border: 2px solid transparent;
+        background-clip: content-box;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(255,255,255,0.5);
+    }
+
+    &::-webkit-scrollbar-button {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+  }
+}

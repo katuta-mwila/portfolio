@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import './utilities.css';
+@import './theme.css';
+@import './components.css';
+@import './random.css';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@layer base{
+  html{
+    overflow-x: hidden;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  nav{
+    pointer-events: all;
+  }
+
+  .nav-type-normal{
+    header{
+      position: relative;
+    }
+
+    main{
+      min-height: calc(100vh - var(--height-nav))
+    }
+
+    .fill-height{
+      min-height: 100vh;
+    }
+  }
+
+  .nav-type-fixed{
+    header{
+      position: fixed;
+    }
+
+    main{
+      @apply min-h-main;
+    }
+
+    .fill-height{
+      min-height: calc(100vh - var(--height-nav));
+    }
+
+    nav.partial-fixed{
+      transform: translateY(0);
+      transition: transform 0.15s ease-out;
+      &.hide{
+        transform: translateY(-105%);
+        pointer-events: none;
+      }
+    }
+  }
+
+  body{
+    @apply text-xl font-main;
+  }
+
+  h1, h2, h3, h4, h5, h6{
+  }
+
+  h1{
+    @apply text-h1;
+    &.ff{
+      @apply text-6xl;
+    }
+  }
+
+  h2{
+    @apply text-h2;
+    &.ff{
+      @apply text-5xl;
+    }
+  }
+
+  h3{
+    @apply text-h3;
+    &.ff{
+      @apply text-4xl;
+    }
+  }
+
+  h4{
+    @apply text-h4;
+    &.ff{
+      @apply text-3xl;
+    }
+  }
+
+  h5{
+    @apply text-h5;
+    &.ff{
+      @apply text-2xl;
+    }
+  }
+
+  h6{
+    @apply text-h6;
+    &.ff{
+      @apply text-xl;
+    }
+  }
+
+  p{
+    @apply text-h6;
+    &.ff{
+      @apply text-xl;
+    }
+  }
+}

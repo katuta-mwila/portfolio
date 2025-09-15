@@ -1,0 +1,184 @@
+@utility flex-center{
+  @apply flex items-center justify-center;
+}
+
+@utility flex-panel{
+  @apply flex items-center;
+}
+
+@utility flex-vert{
+  @apply flex flex-col;
+}
+
+@utility text-outline-black{
+  -webkit-text-stroke: 2px black;
+}
+
+@utility text-outline-white-*{
+  -webkit-text-stroke: --value(integer)px white;
+}
+
+@utility vert-*{
+  @apply flex-vert;
+  gap: calc(var(--spacing) * --value(integer));
+}
+
+@utility horz-*{
+  @apply flex flex-row;
+  gap: calc(var(--spacing) * --value(integer));
+}
+
+@utility abs-center{
+  @apply absolute left-[50%] top-[50%] -translate-[50%];
+}
+
+@utility abs-cover{
+  @apply absolute w-full h-full top-0 left-0;
+}
+
+@utility abs-center-y{
+  @apply absolute top-[50%] -translate-y-[50%];
+}
+
+@utility abs-center-x{
+  @apply absolute left-[50%] -translate-x-[50%];
+}
+
+@utility centered-content-*{
+  @apply mx-auto;
+
+  width: min(--value(--width-content-*),85vw);
+  @media (width >= 48rem){
+    width: min(--value(--width-content-*),90vw);
+  }
+}
+
+@utility shadow-sm-high{
+  box-shadow:
+    0 0 1px 0 rgb(0 0 0 / 0.1),
+    0 1px 3px 0 rgb(0 0 0 / 0.1),
+    0 1px 2px -1px rgb(0 0 0 / 0.1)
+}
+
+@utility shadow-md-high{
+  box-shadow:
+    0 -2px 6px -1px rgb(0 0 0 / 0.1),
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1)
+}
+
+@utility shadow-lg-high{
+  box-shadow:
+    0 -5px 15px -3px rgb(0 0 0 / 0.1),
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1)
+}
+
+@utility shadow-xl-high{
+  box-shadow: 
+    0 -10px 25px -5px rgb(0 0 0 / 0.1),  /* extends 10px above */
+    0 20px 25px -5px rgb(0 0 0 / 0.1),   /* original shadow below */
+    0 8px 10px -6px rgb(0 0 0 / 0.1);    /* subtle lower shadow */
+}
+
+@utility shadow-2xl-high{
+  box-shadow:
+    0 -15px 50px -12px rgb(0 0 0 / 0.1),
+    0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+/*text center when smaller than 768px*/
+@utility text-left-md{ 
+  @apply md:text-left text-center;
+}
+
+/*text center when smaller than 1024px*/
+@utility text-left-lg{
+  @apply lg:text-left text-center;
+}
+
+
+/* GRIDS */
+
+@utility grid-resp-md-2{
+  @apply grid md:grid-cols-2 grid-cols-1;
+}
+
+@utility grid-resp-md-3{
+  @apply grid md:grid-cols-3 grid-cols-1;
+}
+
+@utility grid-resp-lg-2{
+  @apply grid lg:grid-cols-2 grid-cols-1;
+}
+
+@utility grid-resp-lg-3{
+  @apply grid lg:grid-cols-3 grid-cols-1;
+}
+
+
+/* Semi Components */
+
+@utility text-input-one{
+  @apply border rounded-md outline-0 py-0.5 px-2 w-full;
+}
+
+@utility input-container-one{
+  @apply flex flex-col gap-1 grow w-full;
+}
+
+@utility button-one{
+  @apply bg-accent-1 text-accent-1-text cursor-pointer rounded-sm px-5 py-3 hover:bg-accent-1-shade-1 active:bg-accent-1-shade-2;
+}
+
+@utility button-two{
+  @apply bg-accent-2 text-accent-2-text cursor-pointer rounded-sm px-6 py-3 hover:bg-accent-2-shade-1 active:bg-accent-2-shade-2 border;
+}
+
+
+/* Theme: Primary
+-------------------------------------------------- */
+
+@utility theme-primary {
+  @apply bg-primary text-primary-text;
+}
+
+@utility theme-secondary {
+  @apply bg-secondary text-secondary-text;
+}
+
+@utility theme-tertiary {
+  @apply bg-tertiary text-tertiary-text;
+}
+
+/* ------------------------------------------------ */
+
+@utility text-h1 {
+  font-size: clamp(var(--text-5xl), 6.25vw, var(--text-6xl));
+  line-height: var(--tw-leading, var(--text-6xl--line-height));
+}
+
+@utility text-h2 {
+  font-size: clamp(var(--text-4xl), 4.69vw, var(--text-5xl));
+  line-height: var(--tw-leading, var(--text-5xl--line-height));
+}
+
+@utility text-h3 {
+  font-size: clamp(var(--text-3xl), 3.91vw, var(--text-4xl));
+  line-height: var(--tw-leading, var(--text-4xl--line-height));
+}
+
+@utility text-h4 {
+  font-size: clamp(var(--text-2xl), 3.13vw, var(--text-3xl));
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+}
+
+@utility text-h5 {
+  font-size: clamp(var(--text-xl), 2.60vw, var(--text-2xl));
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
+}
+
+@utility text-h6 {
+  font-size: clamp(var(--text-lg), 2.34vw, var(--text-xl));
+  line-height: var(--tw-leading, var(--text-xl--line-height));
+}

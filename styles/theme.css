@@ -1,0 +1,50 @@
+@theme {
+  --color-primary: hsl(0, 0%, 100%);
+  --color-primary-shade-1: hsl(0, 0%, 95%);
+  --color-primary-shade-2: hsl(0, 0%, 90%);
+  --color-primary-text: hsl(0, 0%, 10%);
+
+  --color-secondary: hsl(30, 70%, 45%);
+  --color-secondary-shade-1: hsl(30, 70%, 38%);
+  --color-secondary-shade-2: hsl(30, 70%, 30%);
+  --color-secondary-text: hsl(0, 0%, 100%);
+
+  --color-tertiary: hsl(210, 15%, 18%);
+  --color-tertiary-shade-1: hsl(210, 15%, 24%);
+  --color-tertiary-shade-2: hsl(210, 15%, 30%);
+  --color-tertiary-text: hsl(0, 0%, 100%);
+
+  --color-accent-1: hsl(280, 65%, 55%);
+  --color-accent-1-shade-1: hsl(280, 65%, 45%);
+  --color-accent-1-shade-2: hsl(280, 65%, 35%);
+  --color-accent-1-text: hsl(0, 0%, 100%);
+
+  --color-accent-2: hsl(160, 65%, 42%);
+  --color-accent-2-shade-1: hsl(160, 65%, 34%);
+  --color-accent-2-shade-2: hsl(160, 65%, 26%);
+  --color-accent-2-text: hsl(0, 0%, 100%);
+
+  --color-error-red: #ff583e;
+
+  --color-tint-dark: hsl(0, 0%, 35%);
+  --color-tint-light: hsl(0, 0%, 85%);
+
+  --height-nav: 80px;
+  --height-main: 100vh;
+
+  --width-content-xs: 600px;
+  --width-content-sm: 800px;
+  --width-content-base: 1000px;
+  --width-content-md: 1200px;
+  --width-content-lg: 1400px;
+  --width-content-xl: 1600px;
+  --width-content-full: 90vw;
+
+  --padding-match-nav: var(--height-nav);
+  --padding-nav-x: 20px;
+  --padding-nav-y: 0;
+  --padding-section-x: 0;
+  --padding-section-y: 120px;
+
+  --font-main: "Open Sans", sans-serif;
+}
