@@ -4,12 +4,13 @@ interface Props{
   src: string,
   tag?: string,
   className?: string,
+  id?: string,
   children?: ReactNode
 }
 
 // uses background-image
 
-export default function ImageSection({src, children, className, tag="section"}: Props){
+export default function ImageSection({src, id, children, className, tag="section"}: Props){
 
   const style: CSSProperties ={
     backgroundImage: `url(${src})`,
@@ -19,5 +20,5 @@ export default function ImageSection({src, children, className, tag="section"}: 
 
   }
 
-  return createElement(tag, {className, style}, children)
+  return createElement(tag, {className, style, id}, children)
 }

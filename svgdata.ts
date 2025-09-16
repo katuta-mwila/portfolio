@@ -1,7 +1,20 @@
 /* AUTO-GENERATED FILE. DO NOT EDIT */;
 
+export {default as Azure} from "./public/svgs/azure.svg"
+export {default as Certificate} from "./public/svgs/certificate.svg"
+export {default as Csslogo} from "./public/svgs/csslogo.svg"
+export {default as Dotnet} from "./public/svgs/dotnet.svg"
 export {default as Facebook} from "./public/svgs/facebook.svg"
+export {default as Github} from "./public/svgs/github.svg"
 export {default as Google} from "./public/svgs/google.svg"
+export {default as Html} from "./public/svgs/html.svg"
 export {default as Instagram} from "./public/svgs/instagram.svg"
+export {default as Javascript} from "./public/svgs/javascript.svg"
 export {default as Linkedin} from "./public/svgs/linkedin.svg"
+export {default as NodejsIcon} from "./public/svgs/nodejs-icon.svg"
+export {default as PostgresqlIcon} from "./public/svgs/postgresql-icon.svg"
+export {default as ReactLogo} from "./public/svgs/react-logo.svg"
+export {default as TypescriptLogo} from "./public/svgs/typescript-logo.svg"
+export {default as Typescriptfull} from "./public/svgs/typescriptfull.svg"
+export {default as WebsocketLogo} from "./public/svgs/websocket-logo.svg"
 

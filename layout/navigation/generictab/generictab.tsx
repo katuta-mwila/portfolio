@@ -62,7 +62,7 @@ export default function GenericTab({tab, navType}: {tab: ITab, navType: 'desktop
 
   return <div ref={ref} id={tabId} className={clsx("generic-tab relative", tabDesign.className, navContext.isSelected(tab.id) && "selected", open && "open")}>
     {
-      createElement(tab.hasDropdown ? "div" : Link, {className: clsx("tab-button", tabDesign.button.className), href: tab.href}, 
+      createElement(tab.hasDropdown ? "div" : "div", {className: clsx("tab-button", tabDesign.button.className), href: tab.href}, 
         createElement(tabDesign.button.componentType, {tab: tab})
       )
     }

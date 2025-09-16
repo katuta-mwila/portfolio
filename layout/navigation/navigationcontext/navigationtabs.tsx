@@ -27,44 +27,46 @@ export const navigationTabs: ITab[] = [
     id: "home",
     isIndex: true,
     text: "Home",
-    href: rootPath + "/",
+    href: "#home",
     hasDropdown: false,
     desktop: desktopTabDesign,
     mobile: mobileTabDesign,
     subTabs: []
   },
   {
-    id: "page-2",
-    text: "Services",
-    href: rootPath + "/page-2",
-    hasDropdown: true,
-    desktop: desktopTabDesign,
-    mobile: mobileTabDesign,
-    subTabs: [
-      {
-        pathType: "relative",
-        href: "/subpage-1",
-        text: "Website Building"
-      },
-      {
-        pathType: "relative",
-        href: "/subpage-2",
-        text: "Analytics"
-      },
-      {
-        pathType: "relative",
-        href: "/subpage-3",
-        text: "Research"
-      }
-    ]
-  },
-  {
-    id: "page-3",
-    text: "Page 3",
-    href: rootPath + "/page-3",
+    id: "projects",
+    text: "Projects",
+    href: "#projects",
     hasDropdown: false,
     desktop: desktopTabDesign,
-    mobile: undefined,
+    mobile: mobileTabDesign,
+    subTabs: []
+  },
+  {
+    id: "about",
+    text: "About",
+    href: "#about",
+    hasDropdown: false,
+    desktop: desktopTabDesign,
+    mobile: mobileTabDesign,
+    subTabs: []
+  },
+  {
+    id: "skills",
+    text: "Skills",
+    href: "#skills",
+    hasDropdown: false,
+    desktop: desktopTabDesign,
+    mobile: mobileTabDesign,
+    subTabs: []
+  },
+  {
+    id: "contact",
+    text: "Contact",
+    href: "#contact",
+    hasDropdown: false,
+    desktop: desktopTabDesign,
+    mobile: mobileTabDesign,
     subTabs: []
   },
 ]

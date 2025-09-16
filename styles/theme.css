@@ -1,33 +1,37 @@
 @theme {
-  --color-primary: hsl(0, 0%, 100%);
-  --color-primary-shade-1: hsl(0, 0%, 95%);
-  --color-primary-shade-2: hsl(0, 0%, 90%);
-  --color-primary-text: hsl(0, 0%, 10%);
+  --color-primary: hsl(244, 36%, 23%);
+  --color-primary-shade-1: hsl(244, 36%, 13%);
+  --color-primary-shade-2: hsl(244, 36%, 3%);
+  --color-primary-text: hsl(0, 0%, 80%);
 
-  --color-secondary: hsl(30, 70%, 45%);
-  --color-secondary-shade-1: hsl(30, 70%, 38%);
-  --color-secondary-shade-2: hsl(30, 70%, 30%);
-  --color-secondary-text: hsl(0, 0%, 100%);
+  --color-secondary: hsl(244, 36%, 13%);
+  --color-secondary-shade-1: hsl(244, 36%, 13%);
+  --color-secondary-shade-2: hsl(244, 36%, 13%);
+  --color-secondary-text: hsl(0, 0%, 80%);
 
-  --color-tertiary: hsl(210, 15%, 18%);
-  --color-tertiary-shade-1: hsl(210, 15%, 24%);
-  --color-tertiary-shade-2: hsl(210, 15%, 30%);
-  --color-tertiary-text: hsl(0, 0%, 100%);
+  --color-tertiary: hsl(0, 0%, 80%);
+  --color-tertiary-shade-1: hsl(0, 0%, 100%);
+  --color-tertiary-shade-2: hsl(0, 0%, 100%);
+  --color-tertiary-text: hsl(0, 0%, 10%);
 
-  --color-accent-1: hsl(280, 65%, 55%);
-  --color-accent-1-shade-1: hsl(280, 65%, 45%);
-  --color-accent-1-shade-2: hsl(280, 65%, 35%);
+  --color-accent-1: hsl(44, 82%, 56%);
+  --color-accent-1-shade-1: hsl(44°, 78%, 82%);
+  --color-accent-1-shade-2: hsl(44°, 78%, 72%);
   --color-accent-1-text: hsl(0, 0%, 100%);
 
-  --color-accent-2: hsl(160, 65%, 42%);
+  --color-accent-2: hsl(245, 22%, 29%);
   --color-accent-2-shade-1: hsl(160, 65%, 34%);
   --color-accent-2-shade-2: hsl(160, 65%, 26%);
   --color-accent-2-text: hsl(0, 0%, 100%);
 
+  --color-accent-3: rgba(0, 0, 0, 0.3);
+
+  --color-accent-4: hsl(160, 65%, 34%);
+
   --color-error-red: #ff583e;
 
   --color-tint-dark: hsl(0, 0%, 35%);
-  --color-tint-light: hsl(0, 0%, 85%);
+  --color-tint-light: hsl(0, 0%, 70%);
 
   --height-nav: 80px;
   --height-main: 100vh;
@@ -44,7 +48,7 @@
   --padding-nav-x: 20px;
   --padding-nav-y: 0;
   --padding-section-x: 0;
-  --padding-section-y: 120px;
+  --padding-section-y: 60px;
 
-  --font-main: "Open Sans", sans-serif;
+  --font-main: "Sofia Pro Regular";
 }

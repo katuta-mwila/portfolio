@@ -1,5 +1,4 @@
 import { EZFormProvider } from "@/components/EasyForm/Form/EZFormProvider";
-import Footer from "@/layout/footer/footer";
 import Navigation from "@/layout/navigation/navigation";
 import '../styles/base.css';
 import "react-multi-carousel/lib/styles.css";
@@ -22,7 +21,6 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
             <main className="theme-primary">
               {children}
             </main>
-            <Footer/>
           </EZFormProvider>
         </NavigationProvider>
       </body>
