@@ -2,6 +2,7 @@
 
 import { StaticImageData } from "next/image";
 import cf from "./public/images/cf.PNG";
+import favicon from "./public/images/favicon.png";
 import gc from "./public/images/gc.PNG";
 import gray_background from "./public/images/gray_background.png";
 import gray_background2 from "./public/images/gray_background2.png";
@@ -14,6 +15,10 @@ export const PubImages = {
   cf: {
     main: cf,
     small: "/images/cf-small.PNG"
+  },
+  favicon: {
+    main: favicon,
+    small: undefined
   },
   gc: {
     main: gc,
