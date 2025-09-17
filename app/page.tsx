@@ -9,7 +9,7 @@ export default function Home() {
     <Hero/>
     <Projects/>
     <About/>
-    <div className="h-40"></div>
+    <div className="h-30"></div>
     <Skills/>
     <div className="h-30"></div>
     <Contact/>

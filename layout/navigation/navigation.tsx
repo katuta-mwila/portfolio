@@ -25,7 +25,7 @@ export default function Navigation(){
     <nav id="navigation" className={clsx("theme-primary bg-primary/0 h-nav partial-fixed", !navContext.data.showNavBar && "hide")}>
       <div className="flex h-full justify-center py-4">
         <div className="flex-panel bg-primary-shade-1/95 rounded-4xl px-5 shadow-glow-2">
-          <div className="md:flex-panel hidden">
+          <div className="flex-panel">
             {navContext.data.tabs.map(tab =>{
               if (!tab.desktop) return
               return <div key={tab.id} onClick={() => click(tab.href)}>
@@ -33,7 +33,7 @@ export default function Navigation(){
               </div>
             })}
           </div>
-          <MobileNav/>
+          {/*<MobileNav/>*/}
         </div>
       </div>
     </nav>

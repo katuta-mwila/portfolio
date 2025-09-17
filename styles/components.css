@@ -45,7 +45,7 @@
     }
 
     .desktop-template-button{
-      @apply flex-panel justify-between cursor-pointer text-lg px-2 py-3;
+      @apply flex-panel justify-between cursor-pointer md:text-xl text-base md:px-2 px-1.5 py-3;
     }
 
     .mobile-template-button{

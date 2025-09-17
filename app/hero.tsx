@@ -1,7 +1,9 @@
 "use client"
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+
   return (
     <section id="home" className="theme-primary py-section-y min-h-[65vh] flex-center">
       <motion.div

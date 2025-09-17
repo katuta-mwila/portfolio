@@ -54,19 +54,19 @@ export default function Skills() {
         </motion.h1>
 
         <motion.div
-          className="flex flex-wrap justify-center gap-10 mt-10"
+          className="flex flex-wrap justify-center md:gap-10 gap-5"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={container}
         >
           {skillset.map((sk) => (
-            <motion.div key={sk.name} variants={item} className="vert-5 items-center md:w-[210px] w-[150px]" layout>
+            <motion.div key={sk.name} variants={item} className="vert-5 items-center md:w-[210px] w-[100px]" layout>
               <div className="w-[80%] bg-primary px-5 pt-5 pb-2 vert-4 items-center rounded-md text-gray-100">
                 <sk.Icon className="w-full h-full" />
                 <div>{sk.percentage}</div>
               </div>
-              <div>{sk.name}</div>
+              <div className="text-h6">{sk.name}</div>
             </motion.div>
           ))}
         </motion.div>
