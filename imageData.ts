@@ -2,10 +2,12 @@
 
 import { StaticImageData } from "next/image";
 import cf from "./public/images/cf.PNG";
+import clinicalcuts from "./public/images/clinicalcuts.PNG";
 import favicon from "./public/images/favicon.png";
 import gc from "./public/images/gc.PNG";
 import gray_background from "./public/images/gray_background.png";
 import gray_background2 from "./public/images/gray_background2.png";
+import paraplumbing from "./public/images/paraplumbing.PNG";
 import pl from "./public/images/pl.PNG";
 import placeholder from "./public/images/placeholder.webp";
 
@@ -15,6 +17,10 @@ export const PubImages = {
   cf: {
     main: cf,
     small: "/images/cf-small.PNG"
+  },
+  clinicalcuts: {
+    main: clinicalcuts,
+    small: undefined
   },
   favicon: {
     main: favicon,
@@ -30,6 +36,10 @@ export const PubImages = {
   },
   gray_background2: {
     main: gray_background2,
+    small: undefined
+  },
+  paraplumbing: {
+    main: paraplumbing,
     small: undefined
   },
   pl: {

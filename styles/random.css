@@ -126,8 +126,35 @@
        url('/fonts/sofiapro/Sofia Pro Black Italic Az.woff') format('woff');
 }
 
+.project-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+      "one one one one one one"
+      "two two two two two two"
+      "three three three three three three"
+      "four four four four four four"
+      "five five five five five five"
+    ;
 
+  @media (width >= 48rem){
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+      "one one one two two two"
+      "three three three four four four"
+      "five five five five five five"
+    ;
+  }
+  
+  @media (width >= 64rem){
+    grid-template-areas: 
+      "one one two two three three"
+      "four four four five five five"
+    ;
+  }
 
+  
+}
 
 .project-card{
   box-shadow: 0 0 80px 15px rgb(110, 39, 192);

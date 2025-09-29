@@ -15,6 +15,7 @@ interface IProject {
   github: string
   techStackIcons: any[]
   techStackNames: string[]
+  area: string
 }
 
 export default function Projects() {
@@ -26,6 +27,7 @@ export default function Projects() {
       github: "https://github.com/katuta-mwila/performance-logger",
       techStackIcons: [ReactLogo, TypescriptLogo, NodejsIcon, PostgresqlIcon],
       techStackNames: ["React", "TypeScript", "NodeJS", "PostgreSQL"],
+      area: "one"
     },
     {
       name: "Football Fixture Viewer",
@@ -34,6 +36,7 @@ export default function Projects() {
       github: "https://github.com/katuta-mwila/capital-fixtures",
       techStackIcons: [ReactLogo, Dotnet],
       techStackNames: ["React", "Dotnet"],
+      area: "two"
     },
     {
       name: "Games Center",
@@ -41,8 +44,27 @@ export default function Projects() {
       href: "https://games-center.azurewebsites.net/",
       github: "https://github.com/katuta-mwila/GamesCenter",
       techStackIcons: [ReactLogo, Dotnet, WebsocketLogo],
-      techStackNames: ["ReactLogo", "Dotnet", "Web Sockets"],
+      techStackNames: ["React", "Dotnet", "Web Sockets"],
+      area: "three"
     },
+    {
+      name: "Clinical Cuts",
+      blurSrc: PubImages.clinicalcuts,
+      href: "https://clinical-cuts.vercel.app/",
+      github: "",
+      techStackIcons: [ReactLogo, Dotnet, WebsocketLogo],
+      techStackNames: ["React", "Dotnet", "Web Sockets"],
+      area: "four"
+    },
+    {
+      name: "Para Plumbing",
+      blurSrc: PubImages.paraplumbing,
+      href: "https://paraplumbing.vercel.app/",
+      github: "",
+      techStackIcons: [ReactLogo, Dotnet, WebsocketLogo],
+      techStackNames: ["React", "Dotnet", "Web Sockets"],
+      area: "five"
+    }
   ]
 
   return (
@@ -56,7 +78,7 @@ export default function Projects() {
         Projects
       </motion.h2>
       <motion.div
-        className="centered-content-full grid-resp-lg-3 gap-10"
+        className="centered-content-full project-grid gap-10"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -83,6 +105,7 @@ function ProjectCard(project: IProject) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
+      style={{gridArea: project.area}}
     >
       <h6 className="text-center p-4">{project.name}</h6>
       <div className="relative px-5 group overflow-hidden">
@@ -90,7 +113,7 @@ function ProjectCard(project: IProject) {
           <BlurImage
             alt=""
             blurSrc={project.blurSrc}
-            containerClass="w-full aspect-[4/3] rounded-md group-hover:scale-110 duration-300 transition-transform"
+            containerClass="w-full h-[20vw] min-h-[300px] rounded-md group-hover:scale-110 duration-300 transition-transform"
             centerFill
           />
           <div className="abs-cover bg-black/15 hover:bg-black/0 duration-300"></div>
