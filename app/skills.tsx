@@ -2,18 +2,20 @@
 
 import { motion } from "framer-motion"
 import ImageSection from "@/components/MediaComponents/ImageSection"
-import { Csslogo, Dotnet, Github, Html, Javascript, NodejsIcon, PostgresqlIcon, ReactLogo, Typescriptfull } from "@/svgdata"
+import { Csslogo, Dotnet, Github, Html, Javascript, Nextjs, NodejsIcon, PostgresqlIcon, ReactLogo, TailwindLogo, Typescriptfull } from "@/svgdata"
 
 export default function Skills() {
   const skillset = [
     { name: "HTML", Icon: Html, percentage: "99%" },
     { name: "JavaScript", Icon: Javascript, percentage: "99%" },
     { name: "CSS", Icon: Csslogo, percentage: "99%" },
-    { name: "TypeScript", Icon: Typescriptfull, percentage: "90%" },
+    { name: "TypeScript", Icon: Typescriptfull, percentage: "95%" },
     { name: "React", Icon: ReactLogo, percentage: "95%" },
     { name: "NodeJS", Icon: NodejsIcon, percentage: "95%" },
+    { name: "NextJS", Icon: Nextjs, percentage: "95%" },
+    { name: "Tailwind", Icon: TailwindLogo, percentage: "95%" },
     { name: ".NET", Icon: Dotnet, percentage: "95%" },
-    { name: "PostgreSQL", Icon: PostgresqlIcon, percentage: "85%" },
+    { name: "PostgreSQL", Icon: PostgresqlIcon, percentage: "90%" },
     { name: "Github", Icon: Github, percentage: "90%" },
   ]
 

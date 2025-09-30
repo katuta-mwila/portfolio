@@ -159,4 +159,8 @@
 .project-card{
   box-shadow: 0 0 80px 15px rgb(110, 39, 192);
   overflow: hidden;
+
+  .blur-container{
+    @apply w-full lg:aspect-[16/16] aspect-[16/12] lg:max-h-[380px] max-h-[300px];
+  }
 }

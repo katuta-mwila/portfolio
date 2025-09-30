@@ -44,7 +44,7 @@ function SocialCard({ social }: { social: any }) {
       target="_blank"
       className="hover:text-accent-1 items-center bg-secondary p-10 min-w-[300px] rounded-lg hover:shadow-gl hover:shadow-glow-2 hover:translate-y-2 duration-300 flex flex-col gap-4"
     >
-      <social.Icon className="h-20 w-20" />
+      <social.Icon className="md:h-20  md:w-20 h-10 w-10" />
       <div className="wrap-anywhere text-center">{social.name}</div>
     </Link>
   )

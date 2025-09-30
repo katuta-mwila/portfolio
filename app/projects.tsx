@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { BlurImage } from "@/components/MediaComponents/BlurImage"
 import QuickMap from "@/components/QuickMap"
 import { IBlurSrc, PubImages } from "@/imageData"
-import { Dotnet, Github, NodejsIcon, PostgresqlIcon, ReactLogo, TypescriptLogo, WebsocketLogo } from "@/svgdata"
+import { Dotnet, Github, Nextjs, NodejsIcon, PostgresqlIcon, ReactLogo, TailwindLogo, TypescriptLogo, WebsocketLogo } from "@/svgdata"
 import { Link2 } from "lucide-react"
 import Link from "next/link"
 
@@ -51,18 +51,18 @@ export default function Projects() {
       name: "Clinical Cuts",
       blurSrc: PubImages.clinicalcuts,
       href: "https://clinical-cuts.vercel.app/",
-      github: "",
-      techStackIcons: [ReactLogo, Dotnet, WebsocketLogo],
-      techStackNames: ["React", "Dotnet", "Web Sockets"],
+      github: "https://github.com/katuta-mwila/clinical-cuts",
+      techStackIcons: [ReactLogo, Nextjs, TypescriptLogo, TailwindLogo],
+      techStackNames: ["React", "NextJS", "TypeScript", "Tailwind"],
       area: "four"
     },
     {
       name: "Para Plumbing",
       blurSrc: PubImages.paraplumbing,
       href: "https://paraplumbing.vercel.app/",
-      github: "",
-      techStackIcons: [ReactLogo, Dotnet, WebsocketLogo],
-      techStackNames: ["React", "Dotnet", "Web Sockets"],
+      github: "https://github.com/katuta-mwila/paraplumbing",
+      techStackIcons: [ReactLogo, Nextjs, TypescriptLogo, TailwindLogo],
+      techStackNames: ["React", "NextJS", "TypeScript", "Tailwind"],
       area: "five"
     }
   ]
@@ -113,7 +113,7 @@ function ProjectCard(project: IProject) {
           <BlurImage
             alt=""
             blurSrc={project.blurSrc}
-            containerClass="w-full h-[20vw] min-h-[300px] rounded-md group-hover:scale-110 duration-300 transition-transform"
+            containerClass="rounded-md group-hover:scale-110 duration-300 transition-transform"
             centerFill
           />
           <div className="abs-cover bg-black/15 hover:bg-black/0 duration-300"></div>
