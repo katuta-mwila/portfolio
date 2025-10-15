@@ -3,6 +3,7 @@
 import { StaticImageData } from "next/image";
 import cf from "./public/images/cf.PNG";
 import clinicalcuts from "./public/images/clinicalcuts.PNG";
+import cultural_festival from "./public/images/cultural_festival.PNG";
 import favicon from "./public/images/favicon.png";
 import gc from "./public/images/gc.PNG";
 import gray_background from "./public/images/gray_background.png";
@@ -20,6 +21,10 @@ export const PubImages = {
   },
   clinicalcuts: {
     main: clinicalcuts,
+    small: undefined
+  },
+  cultural_festival: {
+    main: cultural_festival,
     small: undefined
   },
   favicon: {
