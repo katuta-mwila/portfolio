@@ -1,2 +1,0 @@
-Make vert and horz class work with a gap of 0 just by writing vert or horz
-Fix generateimageimports.js casing
